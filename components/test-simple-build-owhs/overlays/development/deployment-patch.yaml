@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-simple-build-owhs
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/tnevrlka-test/build-e2e-rnzs-tenant/build-suite-test-application-uebr/test-simple-build-owhs@sha256:c3057235e47861641eaea1d80153db73cbb8200d16f22f25b7bc07acaf4502f6
+        name: my-nginx
+        resources: {}
+status: {}
